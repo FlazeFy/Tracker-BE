@@ -19,6 +19,8 @@ func InitV1() *echo.Echo {
 
 	// =============== Private routes (Admin) ===============
 	e.POST("api/v1/location", lochandlers.PostLocation)
+	e.GET("api/v1/location", lochandlers.GetAllLocations)
+	e.GET("api/v2/location", lochandlers.GetAllLocationsFirebase)
 
 	return e
 }

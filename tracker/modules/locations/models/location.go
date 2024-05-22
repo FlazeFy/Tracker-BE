@@ -1,7 +1,7 @@
 package models
 
 type (
-	PostLocation struct {
+	Location struct {
 		LocName string `json:"location_name"`
 		LocDesc string `json:"location_desc"`
 		LocLat  string `json:"location_lat"`

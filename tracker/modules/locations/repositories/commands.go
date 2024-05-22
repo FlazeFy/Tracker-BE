@@ -10,7 +10,7 @@ import (
 	"tracker/packages/helpers/response"
 )
 
-func PostLocation(d models.PostLocation) (response.Response, error) {
+func PostLocation(d models.Location) (response.Response, error) {
 	// Declaration
 	var res response.Response
 	var baseTable = "locations"
