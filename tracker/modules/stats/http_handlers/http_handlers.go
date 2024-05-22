@@ -15,3 +15,12 @@ func GetTotalLocationByCategoryFirebase(c echo.Context) error {
 
 	return c.JSON(http.StatusOK, result)
 }
+
+func GetTotalLocationByAppsFirebase(c echo.Context) error {
+	result, err := repositories.GetTotalLocationByAppsFirebase()
+	if err != nil {
+		return c.JSON(http.StatusInternalServerError, map[string]string{"message": err.Error()})
+	}
+
+	return c.JSON(http.StatusOK, result)
+}

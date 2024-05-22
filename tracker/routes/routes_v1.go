@@ -26,6 +26,7 @@ func InitV1() *echo.Echo {
 	e.GET("api/v2/location", lochandlers.GetAllLocationsFirebase)
 
 	e.GET("api/v2/stats/location_category", stshandlers.GetTotalLocationByCategoryFirebase)
+	e.GET("api/v2/stats/location_apps", stshandlers.GetTotalLocationByAppsFirebase)
 
 	return e
 }
